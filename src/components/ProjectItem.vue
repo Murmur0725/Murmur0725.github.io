@@ -1,6 +1,6 @@
 <template>
   <article class="project-item">
-    <a class="project-card" :href="`#project-${project.id}`" @click.prevent>
+    <div class="project-card">
       <div class="project-thumbnail">
         <img
           v-if="project.thumbnail"
@@ -26,10 +26,19 @@
           >
             {{ typeLabel }}
           </span>
-          <span class="project-learn-more">{{ t.projects.learnMore }}</span>
+          <a
+            v-if="learnMoreHref"
+            class="project-learn-more"
+            :href="learnMoreHref"
+            target="_blank"
+            rel="noopener noreferrer"
+            @pointerdown.stop
+          >
+            {{ t.projects.learnMore }}
+          </a>
         </div>
       </div>
-    </a>
+    </div>
   </article>
 </template>
 
@@ -54,6 +63,13 @@ const typeClass = computed(() =>
 const typeLabel = computed(
   () => t.value.projects.types[props.project.type] || props.project.type,
 )
+
+const learnMoreHref = computed(() => {
+  const link = props.project.link || props.project.pdf
+  if (!link) return ''
+  if (/^https?:\/\//i.test(link)) return link
+  return `${baseUrl}${encodeURI(link)}`
+})
 </script>
 
 <style scoped>
@@ -172,11 +188,12 @@ const typeLabel = computed(
   text-transform: uppercase;
   letter-spacing: 0.04em;
   white-space: nowrap;
+  text-decoration: none;
   transition: color 180ms ease;
 }
 
-.project-card:hover .project-learn-more,
-.project-card:focus-visible .project-learn-more {
+.project-learn-more:hover,
+.project-learn-more:focus-visible {
   color: var(--hover-orange);
 }
 </style>

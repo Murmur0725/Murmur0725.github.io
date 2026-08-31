@@ -1,5 +1,15 @@
 const en = [
   {
+    id: 'ai-4',
+    title: 'PhysioGeo Studio',
+    year: '2026',
+    direction: 'AI Systems',
+    description:
+      'A multimodal data merge platform for urban walking experiments. Aligns GPS, EEG, heart rate, respiration, and Mark streams by timestamp and location for visualization, helping participants recall city experiences while completing perception surveys through Merge, Review, and Demo workflows.',
+    type: 'Development',
+    thumbnail: 'images/physiogeo-studio.jpg',
+  },
+  {
     id: 'ai-3',
     title: 'Reactive Desk',
     year: '2025',
@@ -133,6 +143,16 @@ const en = [
 
 const zh = [
   {
+    id: 'ai-4',
+    title: 'PhysioGeo Studio',
+    year: '2026',
+    direction: 'AI Systems',
+    description:
+      '面向城市步行实验的多模态数据合并平台：将 GPS、EEG、心率、呼吸、Mark 等按时间戳与地理位置对齐融合并可视化，辅助被试回溯城市体验、更准确完成感知问卷。覆盖本地上传、时空对齐与结果核查，支持街景与生理指标的地理联动预览。',
+    type: 'Development',
+    thumbnail: 'images/physiogeo-studio.jpg',
+  },
+  {
     id: 'ai-3',
     title: 'Reactive Desk',
     year: '2025',
@@ -264,4 +284,20 @@ const zh = [
   },
 ]
 
-export const projectsByLocale = { en, zh }
+const linkById = {
+  'ai-2': 'images/project-pdf/AI惜食-临期生鲜智能推荐.pdf',
+  'ai-4': 'https://murmur0725.github.io/physiogeo-merge-tool/',
+  'hci-1': 'images/project-pdf/面向积极入睡前状态的多感官生物反馈系统.pdf',
+  'hci-2': 'images/project-pdf/面向积极入睡前状态的多感官生物反馈系统.pdf',
+  'hci-3': 'images/project-pdf/Emotun.pdf',
+  'hci-4': 'images/project-pdf/sleep whisper.pdf',
+  'hci-5': 'images/project-pdf/Eat Together.pdf',
+}
+
+function withLink(list) {
+  return list.map((project) =>
+    linkById[project.id] ? { ...project, link: linkById[project.id] } : project,
+  )
+}
+
+export const projectsByLocale = { en: withLink(en), zh: withLink(zh) }
