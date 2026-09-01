@@ -7,7 +7,7 @@ const en = [
     title: 'Southern University of Science and Technology',
     description: 'Master student in Intelligent Manufacturing and Robotics',
     detail:
-      'Built cross-disciplinary expertise in HCI, experimental design, robotics, and continuum mechanics, with hands-on skills in hardware prototyping and qualitative and quantitative research. Curated multiple international exhibitions and use English as an academic working language. GPA 3.4/4; honored as Outstanding Graduate Student; contributed to national award-winning projects and published first-author papers at ACM DIS and ICHEC.',
+      'Built cross-disciplinary expertise in HCI, experimental design, robotics, and continuum mechanics, with hands-on skills in hardware prototyping and qualitative and quantitative research. Curated multiple international exhibitions and use English as an academic working language. GPA 3.4/4; honored as Outstanding Communist Youth League Member and Outstanding Graduate Student; earned national competition awards including China-U.S. Young Maker Finals First Prize and DIS \'26 Interactivity Track First Prize; published first-author papers at ACM DIS and ICHEC.',
   },
   {
     date: '26.04-26.06',
@@ -33,7 +33,7 @@ const en = [
     title: 'South-Central Minzu University',
     description: 'Bachelor of Architecture, Minor in English',
     detail:
-      'Ranked first in the architecture program with a GPA of 3.84/5, supported by five university-level scholarships and seven honorary titles. Earned five provincial-or-above competition awards, including two at the national level. Built a solid foundation in architectural design, spatial research, and English-language proficiency through a minor in English.',
+      'Ranked first in the architecture program with a GPA of 3.84/5, supported by five university-level scholarships and seven honorary titles. Earned four provincial-or-above competition awards, including two at the national level. Built a solid foundation in architectural design, spatial research, and English-language proficiency through a minor in English.',
   },
   {
     date: '23.11-24.02',
@@ -62,7 +62,7 @@ const zh = [
     title: '南方科技大学',
     description: '智能制造与机器人 · 硕士',
     detail:
-      '系统掌握人机交互方法与实验设计，具备交互方案设计、硬件原型开发及定性、定量研究能力；修习运动学控制与连续介质力学，兼具机器人与力学理论基础。GPA 3.4/4；获评优秀团员与优秀研究生；参与多个国际展览策展，参与项目荣获国家级竞赛奖项，并以第一作者发表 ACM DIS、ICHEC 等顶会论文。可将英文作为学术交流语言。',
+      '系统掌握人机交互方法与实验设计，具备交互方案设计、硬件原型开发及定性、定量研究能力；修习运动学控制与连续介质力学，兼具机器人与力学理论基础。GPA 3.4/4；获评优秀团员与优秀研究生；获中美青年创客大赛总决赛主赛道一等奖、DIS \'26 交互赛道一等奖等竞赛奖项，并以第一作者发表 ACM DIS、ICHEC 等顶会论文。可将英文作为学术交流语言。',
   },
   {
     date: '26.04-26.06',
@@ -88,7 +88,7 @@ const zh = [
     title: '中南民族大学',
     description: '建筑学学士 · 英语辅修',
     detail:
-      'GPA 3.84/5，专业排名第一；5 次校级奖学金、7 项荣誉称号；获 5 项省部级以上学科竞赛大奖（含国家级 2 项）。借由建筑学训练与英语辅修，夯实建筑设计、空间研究与英文学术表达能力。',
+      'GPA 3.84/5，专业排名第一；5 次校级奖学金、7 项荣誉称号；获 4 项省部级以上学科竞赛奖项（含国家级 2 项）。借由建筑学训练与英语辅修，夯实建筑设计、空间研究与英文学术表达能力。',
   },
   {
     date: '23.11-24.02',
